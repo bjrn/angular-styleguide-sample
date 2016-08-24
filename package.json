@@ -4,7 +4,7 @@
   "description": "Angular 1.x styleguide (ES2015) Sample App",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "webpack-dashboard -p 8089 -- webpack-dev-server --config ./webpack.config.js --port 8088",
     "build": "node node_modules/webpack/bin/webpack.js",
     "test": " [ -f dist/bundle.js ] "
   },
@@ -36,6 +36,7 @@
     "html-loader": "^0.4.3",
     "ngtemplate-loader": "^1.3.1",
     "webpack": "^1.12.11",
+    "webpack-dashboard": "^0.1.7",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
